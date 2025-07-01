@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/963aae67b2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Syne+Mono&family=VT323&display=swap" rel="stylesheet">
+
+  <style>
+  .font-leckerli {
+    font-family: 'Leckerli One', cursive;
+   }
+  </style>
+
+  <style>
+  .vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+   }
+  </style>
+
+  <style>
+  .syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+   }
+  </style>
+
+  <style>
+@media (max-width: 640px) and (orientation: portrait) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen-flotante {
+    position: static;
+    width: 80px;
+    height: 80px;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 640px) and (orientation: landscape) {
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .imagen-flotante {
+    position: static;
+    width: 80px;
+    height: 80px;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 641px) {
+  .contenedor {
+    position: relative;
+  }
+  .imagen-flotante {
+    position: absolute;
+    right: 130px;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 112px;
+    height: 112px;
+  }
+}
+</style>
+
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url(imagenes/fondo1.jpg);">
+
+  <div class="flex items-center justify-center min-h-screen bg-black/40 backdrop-blur-sm px-4">
+    
+    <div class="relative bg-white/20 rounded-3xl px-6 py-10 w-[95%] max-w-[500px] sm:max-w-[700px] text-white text-center shadow-xl mx-auto">
+
+      <!-- Títulos -->
+      <h2 class="text-lg md:text-xl vt323-regular tracking-widest">Level 18:</h2>
+      <h1 class="text-3xl md:text-5xl font-leckerli">Graduated &</h1>
+      <h2 class="text-2xl md:text-4xl font-leckerli">Ready to Party <span class="text-yellow-300 font-semibold">🕶️🎓</span></h2>
+
+<!-- Contenedor con imagen y texto -->
+<div class="contenedor vt323-regular text-base md:text-lg">
+  <div>
+    <p>Sábado <span class="text-yellow-300 font-semibold">Fecha del evento</span></p>
+    <p>Lugar: </p>
+    <p>Horario: </p>
+    <p>Comida: </p>
+    <p>CandyBar: </p>
+    <p class="mt-2">¡Nos vemos en la terraza! Puedes traer tu propio consumo 🍻🍻</p>
+    <p class="text-xs italic mt-2">*Trae ropa cómoda, traje de baño, etc*</p>
+  </div>
+</div>
+
+      <!-- Botones -->
+      <div class="flex flex-col sm:flex-row justify-center   gap-6 mt-8">
+        <!-- Confirmar asistencia -->
+        <div class="flex flex-col items-center">
+          <a href="https://wa.me/52XXXXXXXXXX" 
+             class="w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-md flex items-center justify-center text-white text-2xl sm:text-3xl
+                    bg-transparent hover:bg-[#25D366] transition-colors duration-300 ease-in-out">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <span class="text-xs mt-1 sm:text-sm vt323-regular">Confirmar asistencia</span>
+        </div>
+
+        <!-- ¿Cómo llegar? -->
+        <div class="flex flex-col items-center">
+          <a href="https://maps.app.goo.gl" target="_blank" 
+             class="w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-md flex items-center justify-center text-white text-2xl sm:text-3xl
+                    bg-transparent hover:bg-black transition-colors duration-300 ease-in-out">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </a>
+          <span class="text-xs mt-1 sm:text-sm vt323-regular">¿Cómo llegar?</span>
+        </div>
+      </div>
+<div class="w-full mt-6 rounded-2xl overflow-hidden">
+  <iframe 
+    src="https://www.google.com/maps/" 
+    class="w-full h-[300px] sm:h-[400px] md:h-[450px] border-0" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+    </div>
+
+  </div>
+</body>
